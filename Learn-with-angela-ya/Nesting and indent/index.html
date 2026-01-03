@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting and indentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="first-list">
+        <li class="first-list-childs">A</li>
+        <li class="first-list-childs">B</li>
+            <ol class="order-list-first-list-child-b">
+                <li class="first-list-child-b-order-list">B1</li>
+                <li class="first-list-child-b-order-list">B2
+                       <ul class="order-b-list-child-list">
+                        <li class="b2-child">B2a
+                            <ul class="b2a-childs-unorderlist">
+                                <li>B2aa</li>
+                                <li>B2ab</li>
+                            </ul>
+                        </li>
+                        <li>b2b</li>
+                        <li>b2c</li>
+                    </ul>
+                </li>
+                <li class="first-list-child-b-order-list">B3
+                    <ol class="b3-childs">
+                        <li>B31</li>
+                        <li>B32</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li class="first-list-childs">C</li>
+    </ul>
+</body>
+</html>
